@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Todo App</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
@@ -7,7 +7,7 @@
 </head>
 <body class="page">
   <div class="logo">
-    <img class="logo__img" src="./eisenhower-matrix.jpg">
+    <img class="logo__img" src="./eisenhower-matrix.jpg" alt="logo">
     <a class="logo__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details&quest;</a>
   </div>
   <div class="wrapper">
@@ -21,21 +21,21 @@
     <h3 class="title">Todo</h3>
     <ul class="task-list" id='incompleteTasks'>
       <li class="task-list__item">
-        <input class="task-list__checkbox" type='checkbox'>
-        <label class="label task-list__label">Pay Bills</label>
-        <input class="text-input task-list__text" type="text">
+        <input class="task-list__checkbox" type="checkbox">
+        <label class="label task-list__label" for="todoItem">Pay Bills</label>
+        <input class="text-input task-list__text" type="text" id="todoItem">
         <button class="btn-primary">Edit</button>
         <button class="btn-primary">
-          <img class="task-list__delete-img" src="./remove.svg">
+          <img class="task-list__delete-img" src="./remove.svg" alt="remove arrow">
         </button>
       </li>
       <li class="task-list__item task-list__item_edit">
-        <input class="task-list__checkbox" type="checkbox">
+        <input class="task-list__checkbox" type="checkbox" id="checkboxEdit">
         <label class="task-list__edit-label" for="editItem">Go Shopping</label>
         <input class="text-input task-list__edit-text" value="Go Shopping" type="text" id="editItem">
         <button class="btn-primary">Save</button>
         <button class="btn-primary">
-          <img class="task-list__delete-img" src="./remove.svg">
+          <img class="task-list__delete-img" src="./remove.svg" alt="remove arrow">
         </button>
       </li>
     </ul>
@@ -43,11 +43,11 @@
     <ul class="task-list" id="completed-tasks">
       <li class="task-list__item task-list__item_complete">
         <input class="task-list__checkbox" type="checkbox" checked>
-        <label class="task-list__label">See the Doctor</label>
-        <input class="task-list__text" type="text">
+        <label class="task-list__label" for="completeItem">See the Doctor</label>
+        <input class="task-list__text" type="text" id="completeItem">
         <button class="btn-primary task-list__edit-btn">Edit</button>
         <button class="btn-primary task-list__delete-btn">
-          <img class="task-list__delete-img" src="./remove.svg">
+          <img class="task-list__delete-img" src="./remove.svg" alt="remove arrow">
         </button>
       </li>
     </ul>
